@@ -28,4 +28,11 @@ describe('AppComponent', () => {
     app.addCount();
     expect(app.count).toEqual(2);
   });
+
+  it('should not increase the count more than 5.', () => {
+    [...Array(5).keys()].map(() => app.addCount());
+    expect(app.count).toEqual(5);
+    app.addCount();
+    expect(app.count).toEqual(5);
+  });
 });
