@@ -21,4 +21,9 @@ describe('AppComponent', () => {
   it('should see the current count.', () => {
     expect(app.count).toEqual(0);
   });
+
+  it('should increase the count.', () => {
+    app.addCount();
+    expect(app.count).toEqual(1);
+  });
 });
