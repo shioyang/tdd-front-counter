@@ -8,9 +8,8 @@ describe('CountPanelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CountPanelComponent ]
-    })
-    .compileComponents();
+      declarations: [CountPanelComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
