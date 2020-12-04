@@ -9,6 +9,6 @@ export class AppComponent {
   count = 0;
 
   addCount(): void {
-    this.count = 1;
+    this.count = this.count + 1;
   }
 }
